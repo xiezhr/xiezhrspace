@@ -1,0 +1,21 @@
+export const pbBasis = {
+  text: "PB基础入门",
+  icon: "mdi:book-open-page-variant-outline",
+  link: "basis/",
+  prefix: "basis/",
+  children: [
+    "powerscript-basic",
+    "hello-world",
+    "coding-rules",
+    "comm-function",
+    "datawindow",
+    "usewindow",
+    "dynamic-sql-applications",
+    "pber-gospel",
+    "transaction-control",
+    "oop-basic",
+    "debug-skills",
+    "tools",
+    "profile",
+  ],
+};
