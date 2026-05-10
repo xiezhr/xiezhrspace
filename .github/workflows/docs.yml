@@ -34,10 +34,12 @@ jobs:
 
       - name: 安装依赖
         run: pnpm install --frozen-lockfile
+        working-directory: docs
 
       # 运行构建脚本
       - name: 构建 VuePress 站点
         run: pnpm docs:build
+        working-directory: docs
 
       # 查看 workflow 的文档来获取更多信息
       # @see https://github.com/crazy-max/ghaction-github-pages
