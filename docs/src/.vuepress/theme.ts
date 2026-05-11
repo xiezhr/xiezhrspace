@@ -11,7 +11,7 @@ export default hopeTheme({
 
   author: {
     name: "程序员晓凡",
-    url: "https://xiezhrspace.cn",
+    url: "http://docs.xiezhrspace.cn/",
   },
 
   logo: "/logo.png",
