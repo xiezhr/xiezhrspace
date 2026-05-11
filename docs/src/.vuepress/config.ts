@@ -3,10 +3,10 @@ import { defineUserConfig } from "vuepress";
 import theme from "./theme.js";
 
 export default defineUserConfig({
-  base: "/xiezhrspace/",
+  base: "/",
 
   lang: "zh-CN",
-  title: "程序员晓凡",
+  title: "程序员晓凡 ",
   description: "PB开发者的AI转型指南",
 
   theme,
