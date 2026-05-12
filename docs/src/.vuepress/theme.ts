@@ -4,7 +4,7 @@ import navbar from "./navbar.js";
 import sidebar from "./sidebar/index.js";
 
 export default hopeTheme({
-  hostname: "https://vuepress-theme-hope-docs-demo.netlify.app",
+  hostname: "http://docs.xiezhrspace.cn/",
 
   //全屏按钮
   fullscreen: true,
@@ -91,6 +91,7 @@ export default hopeTheme({
     mark: true,
     plantuml: true,
     spoiler: true,
+    markmap: true,
     stylize: [
       {
         matcher: "Recommended",
@@ -125,15 +126,15 @@ export default hopeTheme({
     // },
 
     // 在启用之前安装 chart.js
-    // chartjs: true,
+     chartjs: true,
 
     // insert component easily
 
     // 在启用之前安装 echarts
-    // echarts: true,
+     echarts: true,
 
     // 在启用之前安装 flowchart.ts
-    // flowchart: true,
+     flowchart: true,
 
     // 在启用之前安装 mermaid
      mermaid: true,
@@ -169,6 +170,12 @@ export default hopeTheme({
         },
       },
     },
+    //搜索插件
+    docsearch: {
+        appId: "ZYA5E8EW73",
+        apiKey: "ffaa4cf519de1df9df529f28fbae4c99",
+        indexName: "xiezhrspace",
+      },
 
     components: {
       components: ["Badge", "VPCard"],
