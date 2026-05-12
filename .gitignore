@@ -3,6 +3,7 @@ docs/.vuepress/.cache
 docs/.vuepress/.temp
 docs/.vuepress/dist
 docs/src/.vuepress/.temp/
+docs/src/.vuepress/.cache/
 
 # node
 node_modules
@@ -38,4 +39,5 @@ Thumbs.db
 # Others
 *.local
 dist
+
 

@@ -170,7 +170,7 @@ export default hopeTheme({
         },
       },
     },
-    //搜索插件
+    //搜索插件 pnpm i -D @vuepress/plugin-docsearch@next
     docsearch: {
         appId: "ZYA5E8EW73",
         apiKey: "ffaa4cf519de1df9df529f28fbae4c99",
