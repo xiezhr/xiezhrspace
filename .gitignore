@@ -2,7 +2,6 @@
 docs/.vuepress/.cache
 docs/.vuepress/.temp
 docs/.vuepress/dist
-docs/src/.vuepress/.temp
 
 # node
 node_modules
@@ -39,4 +38,5 @@ Thumbs.db
 *.local
 dist
 
-发布时间.md
+
+docs/src/.vuepress/.temp/

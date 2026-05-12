@@ -27,10 +27,10 @@ export default hopeTheme({
   sidebar,
 
   // 页脚
-  footer: "默认页脚",
+  footer: "",
   displayFooter: true,
 
-  copyright: "基于 MIT 协议，© 2019-至今 Mr.Hope",
+  copyright: "基于 MIT 协议，© 2019-至今 xiezhr",
 
   blog: {
           description: "爱学习 爱生活 把分享变成一种习惯 即使再小的帆也能扬帆远航           每一个“1” 都是“∞”的开始 每一行代码，每一次创新，每一步前行，终将抵达最好的我们！",
@@ -165,7 +165,7 @@ export default hopeTheme({
     },
     //版权信息
      copyright: {
-      author: "Mister Hope",
+      author: "xiezhr",
       license: "MIT",
 
       // 当复制的内容长度不小于 40 时，追加版权信息
