@@ -33,7 +33,7 @@ footer: '<a href="https://beian.miit.gov.cn/" rel="noopener noreferrer" target="
 - [PB案例实战](pb/cases/) — 58个实战案例
 
 </div>
-<div style="flex:1;min-width:280px">
+<div style="flex:1;min-width:280px ">
 
 ### 技术转型
 
