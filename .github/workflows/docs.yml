@@ -5,14 +5,15 @@ on:
     branches: [master]
   workflow_dispatch:
 
-jobs:
-  docs:
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
+permissions:
+  contents: write
 
+jobs:
+  deploy-gh-pages:
+    runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
@@ -36,17 +37,8 @@ jobs:
         run: pnpm docs:build
         working-directory: docs
 
-      # ✅【新增】构建后在输出目录创建 CNAME
-      # 因为 public/CNAME 没被自动复制，手动创建
-      - name: 添加自定义域名
-        run: echo "docs.xiezhrspace.cn" > CNAME
-        working-directory: docs
-
-      # ✅【修正】build_dir 指向构建后的站点根目录
       - name: 部署到 GitHub Pages
-        uses: crazy-max/ghaction-github-pages@v4
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
-          target_branch: gh-pages
-          build_dir: docs           # ← 原来是 docs/src/.vuepress/dist，现在改为 docs
-        env:
-          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          branch: gh-pages
+          folder: docs/src/.vuepress/dist
