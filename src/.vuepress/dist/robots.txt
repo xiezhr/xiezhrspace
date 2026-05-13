@@ -1,0 +1,4 @@
+User-agent:*
+Disallow:
+
+Sitemap: http://docs.xiezhrspace.cn/sitemap.xml

@@ -1,0 +1,67 @@
+import { arraySidebar } from "vuepress-theme-hope";
+
+export const growth = arraySidebar([
+  "",
+  {
+    text: "IDEA使用",
+    icon: "mdi:language-java",
+    link: "idea/",
+    prefix: "idea/",
+    collapsible: true,
+    children: [
+      "install",
+      "shortcuts",
+      "debug",
+      "plugins",
+    ],
+  },
+  {
+    text: "Git/GitHub",
+    icon: "mdi:git",
+    link: "git/",
+    prefix: "git/",
+    collapsible: true,
+    children: [
+      "install",
+      "basic",
+      "branch",
+      "github",
+      "workflow",
+    ],
+  },
+  {
+    text: "Linux核心命令",
+    icon: "mdi:linux",
+    link: "linux/",
+    prefix: "linux/",
+    collapsible: true,
+    children: [
+      "01-intro",
+      "02-file-type",
+      "03-securecrt",
+      "04-shutdown",
+      "05-file-dir",
+      "06-file-content",
+      "07-grep-sed-awk",
+      "08-vim",
+      "09-system-info",
+      "10-network",
+      "11-backup",
+      "12-install",
+      "13-user",
+    ],
+  },
+  {
+    text: "SpringBoot+Vue",
+    icon: "mdi:vuejs",
+    link: "springboot-vue/",
+    prefix: "springboot-vue/",
+    collapsible: true,
+    children: [
+      "java-basic",
+      "springboot",
+      "vue",
+      "project",
+    ],
+  },
+]);
