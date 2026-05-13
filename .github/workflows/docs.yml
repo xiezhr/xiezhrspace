@@ -1,10 +1,8 @@
 name: docs
 
 on:
-  # 每当 push 到 master 分支时触发部署
   push:
     branches: [master]
-  # 手动触发部署
   workflow_dispatch:
 
 jobs:
@@ -16,7 +14,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          # “最近更新时间” 等 git 日志相关信息，需要拉取全部提交记录
           fetch-depth: 0
 
       - name: 设置 pnpm
@@ -35,20 +32,21 @@ jobs:
         run: pnpm install --frozen-lockfile
         working-directory: docs
 
-      # 运行构建脚本
       - name: 构建 VuePress 站点
         run: pnpm docs:build
         working-directory: docs
 
-      # 查看 workflow 的文档来获取更多信息
-      # @see https://github.com/crazy-max/ghaction-github-pages
+      # ✅【新增】构建后在输出目录创建 CNAME
+      # 因为 public/CNAME 没被自动复制，手动创建
+      - name: 添加自定义域名
+        run: echo "docs.xiezhrspace.cn" > CNAME
+        working-directory: docs
+
+      # ✅【修正】build_dir 指向构建后的站点根目录
       - name: 部署到 GitHub Pages
         uses: crazy-max/ghaction-github-pages@v4
         with:
-          # 部署到 gh-pages 分支
           target_branch: gh-pages
-          # 部署目录为 VuePress 的默认输出目录
-          build_dir: docs/src/.vuepress/dist
+          build_dir: docs           # ← 原来是 docs/src/.vuepress/dist，现在改为 docs
         env:
-          # GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
