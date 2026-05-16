@@ -8,3 +8,12 @@
     height: 17.5vh !important;
   }
 }
+
+// 覆盖媒体查询中的高度设置
+@media (max-width: 719px) {
+  .blog-home .vp-blog-hero {
+    height: 17.5vh !important;
+    min-height: 140px !important;
+    max-height: 175px !important;
+  }
+}
