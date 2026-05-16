@@ -1,26 +1,61 @@
 ---
-title: 快速上手Linux核心命令
+title: Linux
 icon: mdi:linux
 ---
 
-## 快速上手Linux核心命令
+## Linux
 
-> 以工作中实际运用为例子，快速上手Linux常用命令。
+> 开发人员必备的 Linux 技能，从基础命令到环境部署，够用就行。
 
-### 相关文章
+### 📚 Linux 基础入门
 
 | 序号 | 文章 | 说明 |
 |:----:|------|------|
-| 01 | [核心命令简介](01-intro.md) | Linux命令概述 |
-| 02 | [Linux下七种文件类型、属性及其查看方法](02-file-type.md) | 文件类型与属性 |
-| 03 | [SSH客户端常用工具SecureCRT操作](03-securecrt.md) | SecureCRT使用 |
-| 04 | [关机、重启](04-shutdown.md) | 关机重启命令 |
-| 05 | [文件和目录操作](05-file-dir.md) | 文件目录操作 |
-| 06 | [文件内容相关命令](06-file-content.md) | 文件内容查看 |
-| 07 | [文本处理三剑客](07-grep-sed-awk.md) | grep/sed/awk |
-| 08 | [Linux的文本编辑器vi和vim](08-vim.md) | Vim编辑器 |
-| 09 | [Linux系统信息和相关命令](09-system-info.md) | 系统信息 |
-| 10 | [网络相关命令](10-network.md) | 网络诊断 |
-| 11 | [文件备份与压缩](11-backup.md) | 备份压缩 |
-| 12 | [Linux安装软件](12-install.md) | 软件安装 |
-| 13 | [Linux用户相关命令](13-user.md) | 用户管理 |
+| 01 | [Linux 简介与发行版](01-linux-basics/01-intro.md) | CentOS/Ubuntu/Debian 区别 |
+| 02 | [目录结构详解](01-linux-basics/02-file-type.md) | /etc /var /usr /home 等 |
+| 03 | [用户与权限基础](01-linux-basics/03-securecrt.md) | root、sudo、rwx |
+| 04 | [用户管理命令](01-linux-basics/04-user-commands.md) | useradd、passwd、su |
+| 05 | [关机与重启](01-linux-basics/05-shutdown.md) | shutdown、systemctl |
+
+### 📁 文件与文本操作
+
+| 序号 | 文章 | 说明 |
+|:----:|------|------|
+| 06 | [文件和目录操作](02-file-operations/01-file-dir.md) | cd、ls、cp、mv、rm |
+| 07 | [文件内容查看](02-file-operations/02-file-content.md) | cat、less、head、tail |
+| 08 | [grep 文本过滤](02-file-operations/03-grep.md) | 日志定位神器 |
+| 09 | [Vim 基础](02-file-operations/04-vim.md) | 服务器改配置必备 |
+
+### 🖥️ 系统与软件管理
+
+| 序号 | 文章 | 说明 |
+|:----:|------|------|
+| 10 | [系统信息查看](03-system-software/01-system-info.md) | CPU、内存、磁盘 |
+| 11 | [网络诊断](03-system-software/02-network.md) | ping、curl、netstat |
+| 12 | [文件压缩与备份](03-system-software/03-backup.md) | tar、zip |
+| 13 | [软件安装](03-system-software/04-install.md) | yum、apt |
+
+### ⚙️ 进程与服务管理
+
+| 序号 | 文章 | 说明 |
+|:----:|------|------|
+| 14 | [进程管理](04-process-service/01-process.md) | ps、top、kill |
+| 15 | [后台运行程序](04-process-service/02-background.md) | nohup、& |
+| 16 | [系统服务管理](04-process-service/03-service.md) | systemctl |
+
+### 🚀 开发环境部署
+
+| 序号 | 文章 | 说明 |
+|:----:|------|------|
+| 17 | [JDK 环境配置](05-dev-environment/01-jdk.md) | Java 运行环境 |
+| 18 | [MySQL 与 Redis](05-dev-environment/02-mysql-redis.md) | 数据库和缓存 |
+| 19 | [Nginx 基础配置](05-dev-environment/03-nginx.md) | 反向代理 |
+| 20 | [Docker 入门](05-dev-environment/04-docker.md) | 容器化部署 |
+
+### 🔍 日志排查与脚本
+
+| 序号 | 文章 | 说明 |
+|:----:|------|------|
+| 21 | [日志查看技巧](06-troubleshooting/01-log.md) | tail、grep 组合 |
+| 22 | [性能快速排查](06-troubleshooting/02-performance.md) | CPU、内存、磁盘 |
+| 23 | [Shell 脚本入门](06-troubleshooting/03-shell.md) | 自动化操作 |
