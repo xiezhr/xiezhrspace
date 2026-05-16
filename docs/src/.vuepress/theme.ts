@@ -164,11 +164,7 @@ export default hopeTheme({
       inputPosition: "bottom",
       lightTheme: "light",
       darkTheme: "dark",
-      locales: {
-        "/": {
-          placeholder: "欢迎评论",
-        },
-      },
+      // Giscus 不支持 locales 配置，如需自定义placeholder需通过其他方式
     },
     //搜索插件 pnpm i -D @vuepress/plugin-docsearch@next
     docsearch: {
