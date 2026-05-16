@@ -1,4 +1,5 @@
 import { arraySidebar } from "vuepress-theme-hope";
+import { idea } from "./idea.js";
 
 export const growth = arraySidebar([
   "",
@@ -6,14 +7,6 @@ export const growth = arraySidebar([
     text: "IDEA使用",
     icon: "mdi:language-java",
     link: "idea/",
-    prefix: "idea/",
-    collapsible: true,
-    children: [
-      "install",
-      "shortcuts",
-      "debug",
-      "plugins",
-    ],
   },
   {
     text: "Git/GitHub",
