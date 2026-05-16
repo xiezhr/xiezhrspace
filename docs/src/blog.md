@@ -3,7 +3,7 @@ home: true
 layout: BlogHome
 icon: blog
 title: 博客
-heroImage: /itwanger.png
+bgImage: /assets/image/blog-bg.jpg
 heroText: 程序员晓凡的技术博客
 heroFullScreen: false
 tagline: PB开发者的AI转型日记，记录技术成长每一步。
