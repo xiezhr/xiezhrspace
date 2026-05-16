@@ -194,13 +194,15 @@ export default hopeTheme({
     },
     //水印
     watermark: {
+      enabled: true,
       watermarkOptions: {
         content: "程序员晓凡",
         movable: false,
-        // 其他选项
-        width: 500,
-        height: 500,
-        opacity: 0.9,
+        width: 200,
+        height: 200,
+        globalAlpha: 0.1,
+        fontColor: "#999",
+        fontSize: "14px",
       },
     },
 
