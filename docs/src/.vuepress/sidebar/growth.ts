@@ -22,13 +22,5 @@ export const growth = arraySidebar([
     text: "SpringBoot+Vue",
     icon: "mdi:vuejs",
     link: "springboot-vue/",
-    prefix: "springboot-vue/",
-    collapsible: true,
-    children: [
-      "java-basic",
-      "springboot",
-      "vue",
-      "project",
-    ],
   },
 ]);
