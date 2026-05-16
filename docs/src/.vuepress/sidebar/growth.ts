@@ -19,15 +19,6 @@ export const growth = arraySidebar([
     text: "Git/GitHub",
     icon: "mdi:git",
     link: "git/",
-    prefix: "git/",
-    collapsible: true,
-    children: [
-      "install",
-      "basic",
-      "branch",
-      "github",
-      "workflow",
-    ],
   },
   {
     text: "Linux核心命令",

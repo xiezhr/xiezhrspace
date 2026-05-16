@@ -180,7 +180,7 @@ export default hopeTheme({
     components: {
       components: ["Badge", "VPCard"],
     },
-    //版权信息
+    //版权信息 pnpm i -D @vuepress/plugin-copyright@next
      copyright: {
       author: "xiezhr",
       license: "MIT",
