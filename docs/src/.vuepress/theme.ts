@@ -33,7 +33,7 @@ export default hopeTheme({
   copyright: "基于 MIT 协议，© 2019-至今 xiezhr",
 
   blog: {
-          description: "爱学习 爱生活 把分享变成一种习惯 即使再小的帆也能扬帆远航           每一个“1” 都是“∞”的开始 每一行代码，每一次创新，每一步前行，终将抵达最好的我们！",
+          description: "PB开发者的AI转型日记。把PB当作起点，而不是终点。",
           intro: "/about/",
           medias: {
             GitHub: "https://github.com/xiezhr",
