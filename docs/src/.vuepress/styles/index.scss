@@ -1,19 +1,89 @@
 // place your custom styles here
 
+// ===================== 博客首页样式 =====================
 // 博客首页 hero 区域高度调整
-.blog-home {
-  .vp-blog-hero {
-    min-height: 140px !important;
-    max-height: 175px !important;
-    height: 17.5vh !important;
-  }
+.vp-blog-hero {
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    height: 210px;
+    margin-bottom: 1rem;
+    color: #eee;
+    font-family: var(--vp-font-heading);
 }
 
-// 覆盖媒体查询中的高度设置
 @media (max-width: 719px) {
   .blog-home .vp-blog-hero {
     height: 17.5vh !important;
     min-height: 140px !important;
     max-height: 175px !important;
+  }
+}
+
+// ===================== 文章卡片美化（现代卡片式风格） =====================
+// 文章卡片外层容器
+.vp-article-wrapper {
+  margin-bottom: 1.25rem;
+}
+
+// 文章卡片主体
+.vp-article-item {
+  border-radius: 16px !important;
+  border: 1px solid var(--vp-c-divider);
+  background: var(--vp-c-bg-elv);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12) !important;
+    border-color: var(--vp-c-accent);
+  }
+}
+
+// 标题样式优化
+.vp-article-title {
+  font-size: 1.35rem;
+  font-weight: 600;
+
+  &::after {
+    height: 3px;
+    background: linear-gradient(90deg, var(--vp-c-accent), transparent);
+    border-radius: 2px;
+  }
+}
+
+// 封面图优化
+.vp-article-cover {
+  border-radius: 16px 16px 0 0 !important;
+
+  img {
+    transition: transform 0.3s ease;
+  }
+
+  &:hover img {
+    transform: scale(1.02);
+  }
+}
+
+// 摘要文字
+.vp-article-excerpt {
+  color: var(--vp-c-text-2);
+  line-height: 1.8;
+}
+
+// 移动端适配
+@media (max-width: 719px) {
+  .vp-article-item {
+    border-radius: 12px !important;
+  }
+
+  .vp-article-cover {
+    border-radius: 12px 12px 0 0 !important;
+  }
+
+  .vp-article-title {
+    font-size: 1.2rem;
   }
 }
