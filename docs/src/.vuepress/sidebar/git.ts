@@ -1,10 +1,10 @@
 import { arraySidebar } from "vuepress-theme-hope";
-import { gitCore } from "./git/core.js";
-import { gitAdvanced } from "./git/advanced.js";
-import { gitGithub } from "./git/github.js";
-import { gitGitlab } from "./git/gitlab.js";
-import { gitWorkflow } from "./git/workflow.js";
-import { gitTools } from "./git/tools.js";
+import { gitCore } from "./growth/git/core.js";
+import { gitAdvanced } from "./growth/git/advanced.js";
+import { gitGithub } from "./growth/git/github.js";
+import { gitGitlab } from "./growth/git/gitlab.js";
+import { gitWorkflow } from "./growth/git/workflow.js";
+import { gitTools } from "./growth/git/tools.js";
 
 export const git = arraySidebar([
   "",

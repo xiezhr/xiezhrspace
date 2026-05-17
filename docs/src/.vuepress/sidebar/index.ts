@@ -5,7 +5,7 @@ import { pb } from "./pb.js";
 import { git } from "./git.js";
 import { linux } from "./linux.js";
 import { idea } from "./idea.js";
-import { springbootVue } from "./springboot-vue/index.js";
+import { springbootVue } from "./growth/springboot-vue/index.js";
 
 export default sidebar({
 	"/pb/": pb,

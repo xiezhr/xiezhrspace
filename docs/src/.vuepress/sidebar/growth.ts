@@ -1,5 +1,5 @@
 import { arraySidebar } from "vuepress-theme-hope";
-import { idea } from "./idea.js";
+
 
 export const growth = arraySidebar([
   "",

@@ -1,10 +1,10 @@
 import { arraySidebar } from "vuepress-theme-hope";
-import { linuxBasics } from "./linux/basics.js";
-import { linuxFileOperations } from "./linux/file-operations.js";
-import { linuxSystemNetwork } from "./linux/system-network.js";
-import { linuxProcessService } from "./linux/process-service.js";
-import { linuxDevEnvironment } from "./linux/dev-environment.js";
-import { linuxTroubleshooting } from "./linux/troubleshooting.js";
+import { linuxBasics } from "./growth/linux/basics.js";
+import { linuxFileOperations } from "./growth/linux/file-operations.js";
+import { linuxSystemNetwork } from "./growth/linux/system-network.js";
+import { linuxProcessService } from "./growth/linux/process-service.js";
+import { linuxDevEnvironment } from "./growth/linux/dev-environment.js";
+import { linuxTroubleshooting } from "./growth/linux/troubleshooting.js";
 
 export const linux = arraySidebar([
   "",
