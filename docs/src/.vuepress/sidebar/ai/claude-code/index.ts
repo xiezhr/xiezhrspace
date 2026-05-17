@@ -11,7 +11,7 @@ import { claudeCodeTeam } from "./team.js";
 import { claudeCodeAutodaily } from "./autodaily.js";
 import { claudeCodeAppendix } from "./appendix.js";
 
-export const claudeCodeSidebar = arraySidebar([
+export const claudeCode = arraySidebar([
   "",
   claudeCodeBasics,
   claudeCodeSetup,
