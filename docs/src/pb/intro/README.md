@@ -17,9 +17,7 @@ icon: mdi:information-outline
 
 > 如果你第一次听说 PB，可以把它理解为"一个专门做企业级数据库应用的可视化开发平台"。
 
-![PB 开发界面总览](./assets/pb-ide-overview.png)
-
-<!-- 👆 截图说明：PB IDE 主界面，包含菜单栏、系统树、工作区等区域 -->
+<!-- TODO: 补充 PB IDE 主界面截图 pb-ide-overview.png -->
 
 ---
 
@@ -71,9 +69,7 @@ DataWindow 是 PB 最具辨识度的特性，它是一个**可视化的数据操
 - 内置复杂分组、汇总、嵌套报表
 - 一键导出 Excel、PDF 等格式
 
-![DataWindow 设计器界面](./assets/pb-datawindow-designer.png)
-
-<!-- 👆 截图说明：DataWindow 画板，展示字段拖拽绑定 SQL 的可视化设计过程 -->
+<!-- TODO: 补充 DataWindow 设计器截图 pb-datawindow-designer.png -->
 
 ### 开发效率极高
 
