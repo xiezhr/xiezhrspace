@@ -3,6 +3,7 @@ import { arraySidebar } from "vuepress-theme-hope";
 export const claudeCode = arraySidebar([
   {
     text: "序章",
+    icon: "mdi:book-open-variant",
     prefix: "00-start/",
     children: [
       "what-is-it",
@@ -10,50 +11,61 @@ export const claudeCode = arraySidebar([
     ],
   },
   {
-    text: "第一篇：装起来",
+    text: "第一篇：安装与配置",
+    icon: "mdi:cog-outline",
     prefix: "01-setup/",
     children: [
       "preparation",
       "installation",
       "connect-model",
+      "config",
     ],
   },
   {
-    text: "第二篇：第一次对话",
+    text: "第二篇：开始对话",
+    icon: "mdi:chat-outline",
     prefix: "02-first-talk/",
     children: [
       "opening",
       "ask-well",
       "interview-trick",
+      "image-input",
     ],
   },
   {
-    text: "第三篇：四种工作模式",
+    text: "第三篇：工作模式",
+    icon: "mdi:swap-horizontal",
     prefix: "03-modes/",
     children: [
       "overview",
       "plan-and-auto",
+      "model-switch",
       "when-to-use-which",
     ],
   },
   {
-    text: "第四篇：给项目立规矩",
+    text: "第四篇：项目规矩与权限",
+    icon: "mdi:shield-lock-outline",
     prefix: "04-rules/",
     children: [
       "claude-md",
       "levels-and-growth",
+      "permissions",
     ],
   },
   {
-    text: "第五篇：会话管理",
+    text: "第五篇：会话与上下文管理",
+    icon: "mdi:history",
     prefix: "05-session/",
     children: [
+      "context-window",
       "clear-and-rewind",
       "long-session-tricks",
     ],
   },
   {
     text: "第六篇：省钱",
+    icon: "mdi:cash-multiple",
     prefix: "06-cost/",
     children: [
       "save-token",
@@ -61,23 +73,29 @@ export const claudeCode = arraySidebar([
   },
   {
     text: "第七篇：扩展能力",
+    icon: "mdi:puzzle-outline",
     prefix: "07-extend/",
     children: [
-      "skills",
+      "slash-commands",
       "hooks-and-mcp",
+      "skills",
       "subagent",
+      "headless",
     ],
   },
   {
-    text: "第八篇：多人协作",
+    text: "第八篇：团队协作",
+    icon: "mdi:account-group-outline",
     prefix: "08-team/",
     children: [
       "git-and-worktree",
       "multi-agent",
+      "ci-cd",
     ],
   },
   {
     text: "第九篇：实战——日报生成器",
+    icon: "mdi:rocket-launch-outline",
     prefix: "09-autodaily/",
     children: [
       "00-intro",
@@ -89,5 +107,14 @@ export const claudeCode = arraySidebar([
       "06-publish",
     ],
   },
-  "appendix/cheatsheet",
+  {
+    text: "附录",
+    icon: "mdi:book-alphabet",
+    prefix: "appendix/",
+    children: [
+      "cheatsheet",
+      "troubleshooting",
+      "security",
+    ],
+  },
 ]);

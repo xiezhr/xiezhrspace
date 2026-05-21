@@ -1,6 +1,6 @@
 export const claudeCodeCost = {
-  text: "成本控制",
-  icon: "reduce",
+  text: "第六篇：省钱",
+  icon: "mdi:cash-multiple",
   link: "06-cost/",
   prefix: "06-cost/",
   collapsible: true,

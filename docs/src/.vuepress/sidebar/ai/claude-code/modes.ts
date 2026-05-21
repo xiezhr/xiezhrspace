@@ -1,12 +1,13 @@
 export const claudeCodeModes = {
-  text: "模式",
-  icon: "change",
+  text: "第三篇：工作模式",
+  icon: "mdi:swap-horizontal",
   link: "03-modes/",
   prefix: "03-modes/",
   collapsible: true,
   children: [
     "overview",
     "plan-and-auto",
+    "model-switch",
     "when-to-use-which",
   ],
 };

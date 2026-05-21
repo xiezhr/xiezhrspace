@@ -1,6 +1,6 @@
 export const claudeCodeBasics = {
-  text: "入门",
-  icon: "rocket",
+  text: "序章",
+  icon: "mdi:book-open-variant",
   link: "00-start/",
   prefix: "00-start/",
   collapsible: true,

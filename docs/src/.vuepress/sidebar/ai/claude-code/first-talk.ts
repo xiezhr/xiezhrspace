@@ -1,6 +1,6 @@
 export const claudeCodeFirstTalk = {
-  text: "首次对话",
-  icon: "comment",
+  text: "第二篇：开始对话",
+  icon: "mdi:chat-outline",
   link: "02-first-talk/",
   prefix: "02-first-talk/",
   collapsible: true,
@@ -8,5 +8,6 @@ export const claudeCodeFirstTalk = {
     "opening",
     "ask-well",
     "interview-trick",
+    "image-input",
   ],
 };

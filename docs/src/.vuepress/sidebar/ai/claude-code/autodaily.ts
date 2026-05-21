@@ -1,6 +1,6 @@
 export const claudeCodeAutodaily = {
-  text: "自动化日报",
-  icon: "schedule",
+  text: "第九篇：实战",
+  icon: "mdi:rocket-launch-outline",
   link: "09-autodaily/",
   prefix: "09-autodaily/",
   collapsible: true,
