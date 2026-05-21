@@ -143,3 +143,100 @@
 .fade-leave-to {
   opacity: 0;
 }
+
+// ===================== 左侧栏开关 =====================
+@media (min-width: 768px) {
+  // 隐藏主题原生中等屏开关（我们用自己的）
+  .toggle-sidebar-wrapper {
+    display: none !important;
+  }
+}
+
+.sidebar-toggle-btn {
+  position: fixed;
+  inset-inline-start: var(--sidebar-space, 256px);
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 200;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+
+  width: 28px;
+  height: 80px;
+  padding: 0;
+  border: none;
+  border-radius: 0 10px 10px 0;
+
+  background: var(--vp-c-bg);
+  border-inline-end: 1px solid var(--vp-c-divider);
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.06);
+  cursor: pointer;
+
+  opacity: 0.7;
+  transition:
+    inset-inline-start 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 0.2s ease,
+    background 0.2s ease,
+    box-shadow 0.2s ease;
+
+  &:hover {
+    opacity: 1;
+    background: var(--vp-c-bg-elv);
+    box-shadow: 3px 0 16px rgba(0, 0, 0, 0.1);
+  }
+
+  // 箭头
+  .sidebar-toggle-arrow {
+    width: 7px;
+    height: 7px;
+    border-top: 2px solid var(--vp-c-text-3);
+    border-right: 2px solid var(--vp-c-text-3);
+    transform: rotate(-135deg);
+    transition: transform 0.3s ease, border-color 0.2s ease;
+  }
+
+  &:hover .sidebar-toggle-arrow {
+    border-color: var(--vp-c-accent);
+  }
+
+  // 文字
+  .sidebar-toggle-label {
+    font-size: 11px;
+    letter-spacing: 1px;
+    color: var(--vp-c-text-3);
+    writing-mode: vertical-rl;
+    line-height: 1;
+    user-select: none;
+    transition: color 0.2s ease;
+  }
+
+  &:hover .sidebar-toggle-label {
+    color: var(--vp-c-accent);
+  }
+
+  // 收起状态
+  &.collapsed {
+    inset-inline-start: 0;
+
+    .sidebar-toggle-arrow {
+      transform: rotate(45deg);
+    }
+  }
+}
+
+// 首页 / 无侧栏页面 隐藏
+.theme-container.no-sidebar ~ .sidebar-toggle-btn,
+.no-sidebar .sidebar-toggle-btn {
+  display: none !important;
+}
+
+// 手机隐藏（用主题原生的即可）
+@media (max-width: 767px) {
+  .sidebar-toggle-btn {
+    display: none !important;
+  }
+}
