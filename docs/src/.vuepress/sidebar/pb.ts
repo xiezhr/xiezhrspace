@@ -14,6 +14,11 @@ export const pb = arraySidebar([
     icon: "mdi:information-outline",
     link: "intro/",
   },
+  {
+    text: "PB资源汇总",
+    icon: "mdi:package-variant-closed",
+    link: "tools",
+  },
   pbBasis,
   pbCases,
 ]);
