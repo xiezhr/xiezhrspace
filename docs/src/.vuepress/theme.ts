@@ -16,7 +16,7 @@ export default hopeTheme({
 
   logo: "/logo.png",
 
-  repo: "vuepress-theme-hope/vuepress-theme-hope",
+  repo: "xiezhr/xiezhrspace",
 
   docsDir: "src",
 
@@ -46,7 +46,7 @@ export default hopeTheme({
               // 图标地址
               icon: "https://blog.xiezhrspace.cn/blog-img/csdn.png",
               // 链接 
-              link: "https://blog..net/rong09_13?type=blog",
+              link: "https://blog.csdn.net/rong09_13?type=blog",
             },
             CNBLOG: {
               // 图标地址
@@ -60,12 +60,7 @@ export default hopeTheme({
 
   // 加密配置
   encrypt: {
-    config: {
-      "/demo/encrypt.html": {
-        hint: "Password: 1234",
-        password: "1234",
-      },
-    },
+    config: {},
   },
 
   // 多语言配置
