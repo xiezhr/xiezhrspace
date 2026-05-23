@@ -17,7 +17,9 @@ export const claudeCode = arraySidebar([
     children: [
       "preparation",
       "installation",
+      "ide-integration",
       "connect-model",
+      "model-switch",
       "config",
     ],
   },
@@ -27,9 +29,10 @@ export const claudeCode = arraySidebar([
     prefix: "02-first-talk/",
     children: [
       "opening",
+      "onboard-project",
       "ask-well",
+      "common-tasks",
       "interview-trick",
-      "image-input",
     ],
   },
   {
@@ -39,7 +42,6 @@ export const claudeCode = arraySidebar([
     children: [
       "overview",
       "plan-and-auto",
-      "model-switch",
       "when-to-use-which",
     ],
   },
@@ -49,7 +51,7 @@ export const claudeCode = arraySidebar([
     prefix: "04-rules/",
     children: [
       "claude-md",
-      "levels-and-growth",
+      "rule-levels",
       "permissions",
     ],
   },
@@ -68,6 +70,8 @@ export const claudeCode = arraySidebar([
     icon: "mdi:cash-multiple",
     prefix: "06-cost/",
     children: [
+      "pricing",
+      "model-compare",
       "save-token",
     ],
   },
@@ -77,10 +81,14 @@ export const claudeCode = arraySidebar([
     prefix: "07-extend/",
     children: [
       "slash-commands",
-      "hooks-and-mcp",
       "skills",
+      "task-skill",
+      "ref-skill",
+      "image-input",
+      "hooks-and-mcp",
       "subagent",
       "headless",
+      "plugin-market",
     ],
   },
   {
@@ -118,3 +126,4 @@ export const claudeCode = arraySidebar([
     ],
   },
 ]);
+

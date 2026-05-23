@@ -5,6 +5,8 @@ export const claudeCodeCost = {
   prefix: "06-cost/",
   collapsible: true,
   children: [
+    "pricing",
+    "model-compare",
     "save-token",
   ],
 };

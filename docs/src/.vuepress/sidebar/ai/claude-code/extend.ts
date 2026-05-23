@@ -6,9 +6,13 @@ export const claudeCodeExtend = {
   collapsible: true,
   children: [
     "slash-commands",
-    "hooks-and-mcp",
     "skills",
+    "task-skill",
+    "ref-skill",
+    "image-input",
+    "hooks-and-mcp",
     "subagent",
     "headless",
+    "plugin-market",
   ],
 };

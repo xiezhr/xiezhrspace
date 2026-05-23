@@ -7,7 +7,6 @@ export const claudeCodeModes = {
   children: [
     "overview",
     "plan-and-auto",
-    "model-switch",
     "when-to-use-which",
   ],
 };

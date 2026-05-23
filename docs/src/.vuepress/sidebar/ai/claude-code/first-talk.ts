@@ -6,8 +6,9 @@ export const claudeCodeFirstTalk = {
   collapsible: true,
   children: [
     "opening",
+    "onboard-project",
     "ask-well",
+    "common-tasks",
     "interview-trick",
-    "image-input",
   ],
 };

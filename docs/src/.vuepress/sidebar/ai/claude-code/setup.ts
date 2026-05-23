@@ -7,7 +7,9 @@ export const claudeCodeSetup = {
   children: [
     "preparation",
     "installation",
+    "ide-integration",
     "connect-model",
+    "model-switch",
     "config",
   ],
 };

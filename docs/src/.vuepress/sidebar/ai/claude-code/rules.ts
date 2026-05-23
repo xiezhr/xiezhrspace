@@ -6,7 +6,7 @@ export const claudeCodeRules = {
   collapsible: true,
   children: [
     "claude-md",
-    "levels-and-growth",
+    "rule-levels",
     "permissions",
   ],
 };
