@@ -1,10 +1,11 @@
 ---
+date: 2026-05-26
 title: 接上大模型：官方连不上怎么办
 ---
 
 # 接上大模型：官方连不上怎么办
 
-> 安装篇给了四条路线，这篇把每条路的细节补全——尤其是国内用户最头疼的"官方连不上"怎么绕过去，以及国产模型怎么接进来跑起来。
+> 安装篇给了几条路线，这篇把每条路的细节补全——尤其是国内用户最头疼的"官方连不上"怎么绕过去，以及国产模型怎么接进来跑起来。
 
 ## 先搞清楚为什么"连不上"
 
@@ -142,11 +143,13 @@ litellm --model openai/moonshot-v1-8k --api_base https://api.moonshot.cn/v1 --ap
 ```yaml
 # litellm_config.yaml
 model_list:
-  - model_name: claude-3-5-sonnet   # Claude Code 会用这个名字匹配
+  - model_name: my-claude   # 这里是你自己起的别名，随便写
     litellm_params:
       model: deepseek/deepseek-chat
       api_key: "你的 DeepSeek Key"
 ```
+
+> LiteLLM 里的 `model_name` 是你自己定义的别名，和 Claude Code 的 `--model` 参数没有关系。Claude Code 把请求发给本地代理，代理再映射到实际模型，两边名字不需要一致。
 
 启动时指定配置文件：
 
@@ -175,6 +178,8 @@ litellm --config litellm_config.yaml --port 4000
 | 本地代理 | `HTTPS_PROXY` + `ANTHROPIC_API_KEY` | 有代理工具、追求原版体验 |
 | OpenRouter 中转 | `ANTHROPIC_BASE_URL` + `ANTHROPIC_API_KEY` | 没有代理、不想自己维护 |
 | 国产模型（LiteLLM） | `ANTHROPIC_BASE_URL`（本地端口）+ 任意 Key | 纯国内环境、极低成本 |
+
+> **嫌手动改环境变量麻烦？** [CC Switch](https://www.ccswitch.io/zh/) 是一个开源桌面应用，在 GUI 界面里管理多个 Provider，点一下就切换，同时显示用量和费用，不需要手动改任何配置文件。下一篇「模型选择与切换」里有详细介绍。
 
 连上之后，下一篇讲模型选择与切换——不同任务用不同模型，省钱又高效。
 
