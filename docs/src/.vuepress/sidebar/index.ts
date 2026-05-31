@@ -11,6 +11,8 @@ import { docker } from "./growth/docker/index.js";
 import { maven } from "./growth/maven/index.js";
 import { nginx } from "./growth/nginx/index.js";
 
+import { mysql } from "./growth/mysql/index.js";
+
 export default sidebar({
 	"/pb/": pb,
 	"/ai/": ai,
@@ -23,4 +25,5 @@ export default sidebar({
 	"/growth/docker/": docker,
 	"/growth/maven/": maven,
 	"/growth/nginx/": nginx,
+	"/growth/mysql/": mysql,
 });
