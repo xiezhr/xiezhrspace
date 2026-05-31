@@ -1,4 +1,5 @@
 import { arraySidebar } from "vuepress-theme-hope";
+import { mysql } from "./growth/mysql/index.js";
 
 
 export const growth = arraySidebar([
@@ -33,9 +34,5 @@ export const growth = arraySidebar([
     icon: "mdi:linux",
     link: "linux/",
   },
-  {
-    text: "SpringBoot+Vue",
-    icon: "mdi:vuejs",
-    link: "springboot-vue/",
-  },
+  mysql,
 ]);
