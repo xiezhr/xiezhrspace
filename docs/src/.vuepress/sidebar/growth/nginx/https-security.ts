@@ -5,5 +5,7 @@ export const nginxHttpsSecurity = {
   prefix: "05-https-security/",
   collapsible: true,
   children: [
+    "01-https-config",
+    "02-security-basics",
   ],
 };

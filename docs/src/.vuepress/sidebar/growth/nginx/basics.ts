@@ -5,5 +5,8 @@ export const nginxBasics = {
   prefix: "01-nginx-basics/",
   collapsible: true,
   children: [
+    "01-what-is-nginx",
+    "02-install-nginx",
+    "03-static-hosting",
   ],
 };
